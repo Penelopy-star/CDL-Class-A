@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CDL Class A Driving Job</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #c9d4d4;
+      padding: 20px;
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 30px;
+      box-shadow: 0 0 10px #ccc;
+      min-height: 100vh;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea, button {
+      width: 98%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>CDL Class A Driving Job Application</h2>
+    <form action="https://formspree.io/f/mnnvvnov" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" name="phone" required>
+
+      <label for="position">Which position are you applying for?</label>
+      <select name="position" required>
+        <option value="">Select</option>
+        <option value="Lease to Purchase Program">Lease to Purchase Program</option>
+        <option value="Company Driver Position">Company Driver Position</option>
+      </select>
+
+      <label for="experience">How much experience do you have (OTR or Regional)?</label>
+      <select name="experience" required>
+        <option value="">Select</option>
+        <option value="0-6 months">0-6 months</option>
+        <option value="6-12 months">6-12 months</option>
+        <option value="1+ year">1+ year</option>
+      </select>
+
+      <label for="SAP">Are you in SAP?</label>
+      <select name="SAP" required>
+        <option value="">Select</option>
+        <option value="No">No</option>
+        <option value="STEP 5">STEP 5</option>
+        <option value="STEP 6">STEP 6</option>
+      </select>
+
+      <label for="message">Optional Message:</label>
+      <textarea name="message" rows="5" placeholder="Write a short message (optional)"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
